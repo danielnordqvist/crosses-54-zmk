@@ -128,7 +128,7 @@ MASK_MODS(masked_end,  (MOD_LCTL), &kp END)
 
 SIMPLE_MORPH(sqt_quot, SFT, &kp SV_SQT, &kp SV_DQT)      // Tap: '   | Shift + tap: "
 SIMPLE_MORPH(slash, SFT, &kp SV_FSLH, &kp SV_BSLH)       // Tap: /   | Shift + tap: \
-SIMPLE_MORPH(ltrt, SFT, &kp SV_LT, &kp SV_RT)            // Tap: <   | Shift + tap: >
+SIMPLE_MORPH(sv_ltrt, SFT, &kp SV_LT, &kp SV_RT)            // Tap: <   | Shift + tap: >
 SIMPLE_MORPH(bracket, SFT, &kp SV_LBKT, &kp SV_RBKT)     // Tap: [   | Shift + tap: ]
 SIMPLE_MORPH(parenthesis, SFT, &kp SV_LPAR, &kp SV_RPAR) // Tap: (   | Shift + tap: )
 SIMPLE_MORPH(brace, SFT, &kp SV_LBRC, &kp SV_RBRC)       // Tap: {   | Shift + tap: }
@@ -200,7 +200,7 @@ ZMK_CONDITIONAL_LAYER(fn_layer, NUM NAV, FN)
 
 ZMK_LAYER(colemak,
 //╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-      &kp ESC       &slash         &ltrt       &bracket    &parenthesis     &brace        &excl_qmark   &plus_equal    &star_hash   &dllr_prcnt    &pipe_amps    &m_tilde
+      &kp ESC       &slash         &sv_ltrt       &bracket    &parenthesis     &brace        &excl_qmark   &plus_equal    &star_hash   &dllr_prcnt    &pipe_amps    &m_tilde
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
       &kp TAB       &kp Q         &kp W         &kp F        &kp P           &kp B           &kp J         &kp L         &kp U        &kp Y     &kp SV_A_UMLAUT &sqt_quot  
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
