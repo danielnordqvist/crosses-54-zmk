@@ -13,7 +13,7 @@
 #ifndef KEYMAP_DRAWER
 #include "keys_sv.h"
 #endif
-chosen { zmk,physical-layout = &gggw_crosses_54_layout; };
+/ {chosen { zmk,physical-layout = &gggw_crosses_54_layout; };}
 
 #define COLEMAK 0
 #define NUM 1
