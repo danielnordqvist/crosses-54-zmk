@@ -19,6 +19,7 @@ manifest:
     revision: zephyr-4.1
     import: config/west.yml
   - name: zmk-helpers
+    remote: urob
     path: modules/zmk/helpers
     revision: 0b9e9d1dd9e86f70b4c8c2b0fab55c4f90c9d2e3 # main (4/19/2026)
   self:
