@@ -126,27 +126,37 @@ MASK_MODS(masked_end,  (MOD_LCTL), &kp END)
         bindings = <BINDING1>, <BINDING2>; \
     )
 
-SIMPLE_MORPH(sqt_quot, SFT, &kp SV_SQT, &kp SV_DQT)      
+SIMPLE_MORPH(sqt_quot, SFT, &kp SV_SQT, &kp SV_DQT)
 // Tap: '   | Shift + tap: "
-SIMPLE_MORPH(slash, SFT, &kp SV_FSLH, &kp SV_BSLH)       
+
+SIMPLE_MORPH(slash, SFT, &kp SV_FSLH, &kp SV_BSLH)
 // Tap: /   | Shift + tap: \
-SIMPLE_MORPH(bracket, SFT, &kp SV_LBKT, &kp SV_RBKT)     
+
+SIMPLE_MORPH(bracket, SFT, &kp SV_LBKT, &kp SV_RBKT)
 // Tap: [   | Shift + tap: ]
-SIMPLE_MORPH(parenthesis, SFT, &kp SV_LPAR, &kp SV_RPAR) 
+
+SIMPLE_MORPH(parenthesis, SFT, &kp SV_LPAR, &kp SV_RPAR)
 // Tap: (   | Shift + tap: )
-SIMPLE_MORPH(brace, SFT, &kp SV_LBRC, &kp SV_RBRC)       
+
+SIMPLE_MORPH(brace, SFT, &kp SV_LBRC, &kp SV_RBRC)
 // Tap: {   | Shift + tap: }
-SIMPLE_MORPH(excl_qmark, SFT, &kp SV_EXCL, &kp SV_QMARK) 
+
+SIMPLE_MORPH(excl_qmark, SFT, &kp SV_EXCL, &kp SV_QMARK)
 // Tap: !   | Shift + tap: ?
-SIMPLE_MORPH(plus_equal, SFT, &kp SV_PLUS, &kp SV_EQUAL) 
+
+SIMPLE_MORPH(plus_equal, SFT, &kp SV_PLUS, &kp SV_EQUAL)
 // Tap: +   | Shift + tap: =
-SIMPLE_MORPH(star_hash, SFT, &kp SV_STAR, &kp SV_HASH)   
+
+SIMPLE_MORPH(star_hash, SFT, &kp SV_STAR, &kp SV_HASH)
 // Tap: *   | Shift + tap: #
-SIMPLE_MORPH(dllr_prcnt, SFT, &kp SV_DLLR, &kp SV_PRCNT) 
+
+SIMPLE_MORPH(dllr_prcnt, SFT, &kp SV_DLLR, &kp SV_PRCNT)
 // Tap: $   | Shift + tap: %
-SIMPLE_MORPH(pipe_amps, SFT, &kp SV_PIPE, &kp SV_AMPS)   
+
+SIMPLE_MORPH(pipe_amps, SFT, &kp SV_PIPE, &kp SV_AMPS)
 // Tap: &   | Shift + tap: %
-SIMPLE_MORPH(lessgreater, SFT, &kp SV_LT, &kp SV_GT)     
+
+SIMPLE_MORPH(lessgreater, SFT, &kp SV_LT, &kp SV_GT)
 // Tap: <   | Shift + tap: >
 
 // tap: sticky-shift | shift + tap/ double-tap: caps-word | hold: shift
