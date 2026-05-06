@@ -200,7 +200,7 @@ ZMK_CONDITIONAL_LAYER(fn_layer, NUM NAV, FN)
 
 ZMK_LAYER(colemak,
 //╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-      &kp ESC       &slash         &ltgt       &bracket    &parenthesis     &brace        &excl_qmark   &plus_equal    &star_hash   &dllr_prcnt    &pipe_amps    &m_tilde
+      &kp ESC       &slash         &none       &bracket    &parenthesis     &brace        &excl_qmark   &plus_equal    &star_hash   &dllr_prcnt    &pipe_amps    &m_tilde
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
       &kp TAB       &kp Q         &kp W         &kp F        &kp P           &kp B           &kp J         &kp L         &kp U        &kp Y     &kp SV_A_UMLAUT &sqt_quot  
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
