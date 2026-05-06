@@ -70,6 +70,8 @@ draw_config:
   glyphs: {}
 parse_config:
   preprocess: true
+  zmk_additional_includes: [ "zmk-helpers/include" ]
+  zmk_remove_keycode_prefix: [ "SV_" ]
   skip_binding_parsing: false
   raw_binding_map:
     "&none":
