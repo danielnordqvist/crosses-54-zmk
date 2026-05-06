@@ -12,8 +12,8 @@
 
 #ifndef KEYMAP_DRAWER
 #include "keys_sv.h"
-//chosen { zmk,physical-layout = &gggw_crosses_54_layout; };
 #endif
+chosen { zmk,physical-layout = &gggw_crosses_54_layout; };
 
 #define COLEMAK 0
 #define NUM 1
