@@ -258,7 +258,7 @@
             bindings = <&kp SV_TILDE>, <&kp SV_FSLH>;
         };
     };
-/*
+
     conditional_layers {
         compatible = "zmk,conditional-layers";
         fn_layer {
@@ -266,7 +266,7 @@
             then-layer = <FN>;
         };
     };
-*/
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -279,7 +279,7 @@
                                                 &mo NUM      &mo NAV       &smart_shft     &kp SPACE    &lt NAV BSPC  &kp RET
             >;
         };
-/*
+
         num_layer {
             bindings = <
     &none  &none       &none      &none     &none     &none     &none        &plus_equal   &none   &m_grave  &m_caret      &none
@@ -319,6 +319,6 @@
                              &mkp RCLK  &mkp MCLK  &mkp LCLK    &mkp LCLK  &mkp MCLK  &mkp RCLK
             >;
         };
-*/
+
     };
 };

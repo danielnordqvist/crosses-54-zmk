@@ -6,8 +6,8 @@ manifest:
     url-base: https://github.com/zmkfirmware
   - name: Good-Great-Grand-Wonderful
     url-base: https://github.com/Good-Great-Grand-Wonderful
-  - name: urob
-    url-base: https://github.com/urob
+  #- name: urob
+  #  url-base: https://github.com/urob
   projects:
   - name: zmk
     remote: zmkfirmware
@@ -18,8 +18,8 @@ manifest:
     remote: Good-Great-Grand-Wonderful
     revision: zephyr-4.1
     import: config/west.yml
-  - name: zmk-helpers
-    remote: urob
-    revision: 0b9e9d1dd9e86f70b4c8c2b0fab55c4f90c9d2e3 # main (4/19/2026)
+  #- name: zmk-helpers
+  #  remote: urob
+  #  revision: 0b9e9d1dd9e86f70b4c8c2b0fab55c4f90c9d2e3 # main (4/19/2026)
   self:
     path: config
