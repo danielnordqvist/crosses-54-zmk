@@ -95,7 +95,7 @@
         /*
          * Navigation hold taps
          */
-
+/*
         mt_home: mt_home {
             compatible = "zmk,behavior-hold-tap";
             label = "MT_HOME";
@@ -115,7 +115,7 @@
             quick-tap-ms = <220>;
             bindings = <&kp END>, <&kp>;
         };
-
+*/
         /*
          * Mod morphs
          */
