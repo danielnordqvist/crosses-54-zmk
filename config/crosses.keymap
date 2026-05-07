@@ -299,7 +299,7 @@
                                          &mo NUM           &none      &none          &kp SPACE  &kp BSPC  &kp RET
             >;
         };
-
+/*
         fn_layer {
             bindings = <
     &bt BT_SEL 0  &bt BT_SEL 1      &bt BT_SEL 2  &bt BT_SEL 3    &bt BT_SEL 4      &out OUT_TOG    &none      &kp F10   &kp F11  &kp F12  &none  &none
@@ -309,7 +309,7 @@
                                                   &none           &none             &none           &kp SPACE  &kp BSPC  &kp RET
             >;
         };
-
+*/
         mouse_layer {
             bindings = <
     &none  &none  &none      &none      &none      &none        &none      &none      &none      &none      &none  &none
