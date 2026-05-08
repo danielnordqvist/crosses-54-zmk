@@ -1,0 +1,12 @@
+&spi1 {
+  trackball_central: trackball_central@0 {
+    cpi = <500>;
+  };
+};
+
+&trackball_central_listener {
+  compatible = "zmk,input-listener";
+  status = "okay";
+  device = <&trackball_central>;
+  input-processors = <&zip_temp_layer 3 1000>;
+};
