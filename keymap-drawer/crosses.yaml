@@ -37,7 +37,7 @@ layers:
   - {t: I, h: '$$mdi:apple-keyboard-control$$'}
   - {t: O, h: '$$mdi:apple-keyboard-shift$$'}
   - O UMLAUT
-  - mouse
+  - MOUSE
   - Z
   - X
   - C
@@ -49,13 +49,13 @@ layers:
   - .
   - '-'
   - $$mdi:keyboard-return$$
-  - {t: '$$mdi:keyboard-esc$$', h: num}
-  - {t: '$$mdi:keyboard-tab$$', h: nav}
+  - {t: '$$mdi:keyboard-esc$$', h: NUM}
+  - {t: '$$mdi:keyboard-tab$$', h: NAV}
   - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$', s: '&caps_word'}
   - $$mdi:backspace$$
-  - {t: '$$mdi:keyboard-space$$', h: nav}
+  - {t: '$$mdi:keyboard-space$$', h: NAV}
   - $$mdi:keyboard-return$$
-  num:
+  NUM:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -110,7 +110,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  nav:
+  NAV:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -165,7 +165,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
-  mouse:
+  MOUSE:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -215,7 +215,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - nav
+  - NAV
   - $$mdi:apple-keyboard-shift$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
