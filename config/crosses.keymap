@@ -268,7 +268,7 @@
             bindings = <&kp SV_TILDE>, <&kp SV_FSLH>;
         };
     };
-
+/*
     conditional_layers {
         compatible = "zmk,conditional-layers";
         fn_layer {
@@ -276,7 +276,7 @@
             then-layer = <FN>;
         };
     };
-
+*/
     /* 
     ╭────────────────────────┬────────────────────────╮ ╭─────────────────────────┬─────────────────────────╮
     │  0   1   2   3   4   5 │  6   7   8   9  10  11 │ │ LN5 LN4 LN3 LN2 LN1 LN0 │ RN0 RN1 RN2 RN3 RN4 RN5 │
@@ -289,7 +289,7 @@
 
     keymap {
         compatible = "zmk,keymap";
-
+        display-name = "BASE";
         colemak_layer {
             bindings = <
     &kp ESC        &slash         &lessgreater  &bracket     &parenthesis  &brace          &excl_qmark  &plus_equal    &star_hash    &dllr_prcnt   &pipe_amps       &m_tilde
@@ -301,6 +301,7 @@
         };
 
         num_layer {
+            display-name = "NUM";
             bindings = <
     &trans  &trans  &trans  &trans  &trans  &trans     &trans       &trans  &trans  &trans  &trans    &trans
     &trans  &trans  &trans  &trans  &trans  &trans     &m_dir_up    &kp N7  &kp N8  &kp N9  &m_caret  &trans
@@ -311,6 +312,7 @@
         };
 
         nav_layer {
+            display-name = "NAV";
             bindings = <
     &trans  &none              &none      &none             &none      &none          &none   &none     &none     &none      &none      &none
     &trans  &none              &none      &kp M_FIND        &kp M_NEW  &none          &none   &kp HOME  &kp UP    &kp END    &kp PG_UP  &none
@@ -321,6 +323,7 @@
         };
 
         mouse_layer {
+            display-name = "MOUSE";
             bindings = <
     &trans  &trans  &trans     &trans     &trans     &trans        &trans     &trans     &trans     &trans  &trans  &trans
     &trans  &trans  &trans     &trans     &trans     &trans        &mkp LCLK  &mkp MCLK  &mkp RCLK  &trans  &trans  &trans
@@ -329,6 +332,11 @@
                                &trans     &mo NAV    &kp LSHIFT    &trans     &trans     &trans
             >;
         };
+
+    };
+};
+
+
 /*
         fn_layer {
             bindings = <
@@ -340,5 +348,3 @@
             >;
         };
 */
-    };
-};
