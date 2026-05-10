@@ -294,7 +294,7 @@
             bindings = <
     &kp ESC        &slash         &lessgreater  &bracket     &parenthesis  &brace          &excl_qmark  &plus_equal    &star_hash    &dllr_prcnt   &pipe_amps       &m_tilde
     &kp TAB        &kp Q          &kp W         &kp F        &kp P         &kp B           &kp J        &kp L          &kp U         &kp Y         &kp SV_A_UMLAUT  &sqt_quot
-    &kp SV_A_RING  &hml LSHIFT A  &hml LCTRL R  &hml LALT S  &hml LGUI T   &kp G           &kp M        &hmr RGUI N    &hmr RALT E   &hmr RCTRL I  &hmr RSHIFT O    &kp SV_O_UMLAUT
+    &kp SV_A_RING  &hml LSHIFT A  &hml LCTRL R  &hml LALT S  &hml LCMD T   &kp G           &kp M        &hmr RCMD N    &hmr RALT E   &hmr RCTRL I  &hmr RSHIFT O    &kp SV_O_UMLAUT
     &mo MOUSE      &kp Z          &kp X         &kp C        &kp D         &kp V           &kp K        &kp H          &kp SV_COMMA  &kp SV_DOT    &kp SV_MINUS     &kp RET
                                                 &lt NUM ESC  &lt NAV TAB   &smart_shft     &kp BSPC     &lt NAV SPACE  &kp RET
             >;
@@ -316,7 +316,7 @@
             bindings = <
     &trans  &none              &none      &none             &none      &none          &none   &none     &none     &none      &none      &none
     &trans  &none              &none      &kp M_FIND        &kp M_NEW  &none          &none   &kp HOME  &kp UP    &kp END    &kp PG_UP  &none
-    &none   &hml LSHIFT M_ALL  &kp LCTRL  &hml LALT M_SAVE  &kp LGUI   &none          &none   &kp LEFT  &kp DOWN  &kp RIGHT  &kp PG_DN  &none
+    &none   &hml LSHIFT M_ALL  &kp LCTRL  &hml LALT M_SAVE  &kp LCMD   &none          &none   &kp LEFT  &kp DOWN  &kp RIGHT  &kp PG_DN  &none
     &trans  &kp M_UNDO         &kp M_CUT  &kp M_COPY        &none      &kp M_PASTE    &none   &none     &none     &none      &none      &trans
                                           &trans            &trans     &trans         &trans  &trans    &trans
             >;

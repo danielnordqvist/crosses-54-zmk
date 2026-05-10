@@ -1,6 +1,5 @@
 draw_config:
   append_colon_to_layer_header: false
-  draw_key_sides: true
 
   svg_extra_style: |
     svg.keymap {
@@ -106,6 +105,25 @@ parse_config:
     "&mkp RCLK":
       tap: $$mdi:mouse-right-click$$
       hold: "right"
+
+    '&macro_tilde': '~'
+    '&macro_grave': '`'
+    '&macro_caret': '^'
+    '&macro_dir_up': '../'
+    '&macro_dir_home': '~/'
+
+    '&kp LG(Z)': $$mdi:undo$$
+    '&kp LG(C)': $$mdi:content-copy$$
+    '&kp LG(V)': $$mdi:content-paste$$
+    '&kp LG(X)': $$mdi:content-cut$$
+
+    '&kp LG(F)': $$mdi:file-find-outline$$
+    '&kp LG(A)': $$mdi:select-all$$
+    '&kp LG(S)': $$mdi:content-save-outline$$
+    '&kp LG(N)': $$mdi:open-in-new$$
+
+    '&kp LS(TAB)': $$mdi:keyboard-tab-reverse$$
+
   sticky_label: $$mdi:gesture-tap-hold$$
   toggle_label: toggle
   tap_toggle_label: tap-toggle
@@ -172,11 +190,9 @@ parse_config:
     APOS: ''''
     DOUBLE_QUOTES: '"'
     DQT: '"'
-    COMMA: ','
     LESS_THAN: <
     LT: <
     PERIOD: .
-    DOT: .
     GREATER_THAN: '>'
     GT: '>'
     LEFT_BRACKET: '['
@@ -214,5 +230,14 @@ parse_config:
     PG_DN: $$mdi:transfer-down$$
     BT_CLR: $$mdi:bluetooth-off$$
     BT_SEL: $$mdi:bluetooth-connect$$
+
+    A_RING: 'Å'
+    A_UMLAUT: 'Ä'
+    O_UMLAUT: 'Ö'
+    SECT: '§'
+    EURO: '€'
+    COMMA: { t: ',', s: ';' }
+    DOT: { h: '.', t: ':' }
+
   zmk_combos: {}
   zmk_preamble: '#define KEYMAP_DRAWER'
