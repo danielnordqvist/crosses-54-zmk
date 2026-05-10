@@ -23,20 +23,20 @@ layers:
   - L
   - U
   - Y
-  - A UMLAUT
+  - Ä
   - {t: '''', s: '"'}
-  - A RING
+  - Å
   - {t: A, h: '$$mdi:apple-keyboard-shift$$'}
   - {t: R, h: '$$mdi:apple-keyboard-control$$'}
   - {t: S, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: T, h: LGUI}
+  - {t: T, h: '$$mdi:apple-keyboard-command$$'}
   - G
   - M
-  - {t: N, h: RGUI}
+  - {t: N, h: '$$mdi:apple-keyboard-command$$'}
   - {t: E, h: '$$mdi:apple-keyboard-option$$'}
   - {t: I, h: '$$mdi:apple-keyboard-control$$'}
   - {t: O, h: '$$mdi:apple-keyboard-shift$$'}
-  - O UMLAUT
+  - Ö
   - MOUSE
   - Z
   - X
@@ -45,8 +45,8 @@ layers:
   - V
   - K
   - H
-  - ','
-  - .
+  - {t: ',', s: ;}
+  - {t: ':', h: .}
   - '-'
   - $$mdi:keyboard-return$$
   - {t: '$$mdi:keyboard-esc$$', h: NUM}
@@ -126,8 +126,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - Gui+F
-  - Gui+N
+  - $$mdi:file-find-outline$$
+  - $$mdi:open-in-new$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - HOME
@@ -136,10 +136,10 @@ layers:
   - $$mdi:transfer-up$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: Gui+A, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: '$$mdi:select-all$$', h: '$$mdi:apple-keyboard-shift$$'}
   - $$mdi:apple-keyboard-control$$
-  - {t: Gui+S, h: '$$mdi:apple-keyboard-option$$'}
-  - LGUI
+  - {t: '$$mdi:content-save-outline$$', h: '$$mdi:apple-keyboard-option$$'}
+  - $$mdi:apple-keyboard-command$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:arrow-left-bold$$
@@ -148,11 +148,11 @@ layers:
   - $$mdi:transfer-down$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
-  - Gui+Z
-  - Gui+X
-  - Gui+C
+  - $$mdi:undo$$
+  - $$mdi:content-cut$$
+  - $$mdi:content-copy$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - Gui+V
+  - $$mdi:content-paste$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
