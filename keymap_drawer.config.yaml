@@ -236,7 +236,7 @@ parse_config:
     SECT: '§'
     EURO: '€'
     COMMA: { t: ',', s: ';' }
-    DOT: { h: '.', t: ':' }
+    DOT: { t: '.', s: ':' }
 
   zmk_combos: {}
   zmk_preamble: '#define KEYMAP_DRAWER'
