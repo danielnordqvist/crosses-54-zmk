@@ -305,8 +305,8 @@
 
     keymap {
         compatible = "zmk,keymap";
-        display-name = "BASE";
         base_layer {
+            display-name = "BASE";
             bindings = <
     &pipe_tilde      &slash         &lessgreater  &bracket     &parenthesis   &brace          &excl_qmark   &plus_equal    &star_hash    &dllr_prcnt   &at_amps       &none
     &kp TAB          &kp Q          &kp W         &kp F        &kp P          &kp B           &kp J         &kp L          &kp U         &kp Y         &kp SV_A_RING  &sqt_quot
