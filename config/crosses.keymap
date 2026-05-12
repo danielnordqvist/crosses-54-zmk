@@ -202,11 +202,11 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        pipe_amps: pipe_amps {
+        at_amps: at_amps {
             compatible = "zmk,behavior-mod-morph";
-            label = "PIPE_AMPS";
+            label = "AT_AMPS";
             #binding-cells = <0>;
-            bindings = <&kp SV_PIPE>, <&kp SV_AMPS>;
+            bindings = <&kp SV_AT>, <&kp SV_AMPS>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
@@ -215,6 +215,14 @@
             label = "EXCL_QMARK";
             #binding-cells = <0>;
             bindings = <&kp SV_EXCL>, <&kp SV_QMARK>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        tilde_grave: caret_grave {
+            compatible = "zmk,behavior-mod-morph";
+            label = "CARET_GRAVE";
+            #binding-cells = <0>;
+            bindings = <&kp SV_CARET>, <&kp SV_GRAVE>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
@@ -292,11 +300,11 @@
         display-name = "BASE";
         colemak_layer {
             bindings = <
-    &kp ESC        &slash         &lessgreater  &bracket     &parenthesis  &brace          &excl_qmark  &plus_equal    &star_hash    &dllr_prcnt   &pipe_amps       &m_tilde
-    &kp TAB        &kp Q          &kp W         &kp F        &kp P         &kp B           &kp J        &kp L          &kp U         &kp Y         &kp SV_A_UMLAUT  &sqt_quot
-    &kp SV_A_RING  &hml LSHIFT A  &hml LCTRL R  &hml LALT S  &hml LCMD T   &kp G           &kp M        &hmr RCMD N    &hmr RALT E   &hmr RCTRL I  &hmr RSHIFT O    &kp SV_O_UMLAUT
-    &mo MOUSE      &kp Z          &kp X         &kp C        &kp D         &kp V           &kp K        &kp H          &kp SV_COMMA  &kp SV_DOT    &kp SV_MINUS     &kp RET
-                                                &lt NUM ESC  &lt NAV TAB   &smart_shft     &kp BSPC     &lt NAV SPACE  &kp RET
+    &kp SV_PIPE      &slash         &lessgreater  &bracket     &parenthesis   &brace          &excl_qmark   &plus_equal    &star_hash    &dllr_prcnt   &at_amps       &m_tilde
+    &kp TAB          &kp Q          &kp W         &kp F        &kp P          &kp B           &kp J         &kp L          &kp U         &kp Y         &kp SV_A_RING  &sqt_quot
+    &kp SV_A_UMLAUT  &hml LSHIFT A  &hml LCTRL R  &hml LALT S  &hml LCMD T    &kp G           &kp M         &hmr RCMD N    &hmr RALT E   &hmr RCTRL I  &hmr RSHIFT O  &kp SV_O_UMLAUT
+    &kp LC(B)        &kp Z          &kp X         &kp C        &kp D          &kp V           &kp K         &kp H          &kp SV_COMMA  &kp SV_DOT    &kp SV_MINUS   &caret_grave
+                                                  &lt NUM ESC    &smart_shft  &lt NAV TAB     &lt NAV BSPC  &kp SPACE      &kp RET
             >;
         };
 

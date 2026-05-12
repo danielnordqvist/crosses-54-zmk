@@ -35,7 +35,6 @@ draw_config:
 
     .shifted {
       translate: -9px 3px;
-      opacity: 0.3;
     }
 
     .toggle.shifted {
@@ -52,6 +51,7 @@ draw_config:
     .text_with_symbol.shifted {
       translate: 8px 13px;
       font-size: 12px;
+      opacity: 1.0;
     } 
 
     .combo.text_with_symbol.tap {
