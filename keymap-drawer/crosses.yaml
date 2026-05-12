@@ -46,7 +46,7 @@ layers:
   - K
   - H
   - {t: ',', s: ;}
-  - {t: ':', h: .}
+  - {t: ., s: ':'}
   - '-'
   - ~/
   - {t: '$$mdi:keyboard-esc$$', h: NUM}
