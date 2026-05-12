@@ -4,7 +4,7 @@ draw_config:
   svg_extra_style: |
     svg.keymap {
       font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-      font-size: 10px;
+      font-size: 14px;
       font-weight: bold;
     }
 
@@ -51,7 +51,7 @@ draw_config:
     }
     .text_with_symbol.shifted {
       translate: 8px 13px;
-      font-size: 8px;
+      font-size: 12px;
       opacity: 1.0;
     } 
 
@@ -106,11 +106,11 @@ parse_config:
       tap: $$mdi:mouse-right-click$$
       hold: "right"
 
-    '&macro_tilde': '~'
-    '&macro_grave': '`'
-    '&macro_caret': '^'
-    '&macro_dir_up': '../'
-    '&macro_dir_home': '~/'
+    '&m_tilde': '~'
+    '&m_grave': '`'
+    '&m_caret': '^'
+    '&m_dir_up': '../'
+    '&m_dir_home': '~/'
 
     '&kp LG(Z)': $$mdi:undo$$
     '&kp LG(C)': $$mdi:content-copy$$
