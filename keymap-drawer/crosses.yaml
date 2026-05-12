@@ -1,6 +1,6 @@
 layout: {zmk_keyboard: crosses, layout_name: gggw_crosses_54_layout}
 layers:
-  base:
+  BASE:
   - {t: '|', s: '~'}
   - {t: /, s: \}
   - {t: <, s: '>'}
