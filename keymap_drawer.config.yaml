@@ -3,8 +3,8 @@ draw_config:
 
   svg_extra_style: |
     svg.keymap {
-      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-      font-size: 14px;
+      SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
+      font-size: 16px;
       font-weight: bold;
     }
 
@@ -52,7 +52,6 @@ draw_config:
     .text_with_symbol.shifted {
       translate: 8px 13px;
       font-size: 12px;
-      opacity: 1.0;
     } 
 
     .combo.text_with_symbol.tap {
