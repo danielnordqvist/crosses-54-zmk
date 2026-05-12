@@ -218,7 +218,7 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        tilde_grave: caret_grave {
+        caret_grave: caret_grave {
             compatible = "zmk,behavior-mod-morph";
             label = "CARET_GRAVE";
             #binding-cells = <0>;
