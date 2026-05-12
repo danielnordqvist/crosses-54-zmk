@@ -215,7 +215,7 @@ path.combo {
 
 svg.keymap {
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-  font-size: 10px;
+  font-size: 14px;
   font-weight: bold;
 }
 
@@ -262,7 +262,7 @@ rect.held, rect.combo.held {
 }
 .text_with_symbol.shifted {
   translate: 8px 13px;
-  font-size: 8px;
+  font-size: 12px;
   opacity: 1.0;
 } 
 
@@ -334,7 +334,7 @@ rect.held, rect.combo.held {
 </g>
 <g transform="translate(812, 28)" class="key keypos-11">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap"><tspan style="font-size: 88%">&amp;m_tilde</tspan></text>
+<text x="0" y="0" class="key tap">~</text>
 </g>
 <g transform="translate(28, 84)" class="key keypos-12">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -603,7 +603,7 @@ rect.held, rect.combo.held {
 </g>
 <g transform="translate(532, 84)" class="key keypos-18">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap"><tspan style="font-size: 78%">&amp;m_dir_up</tspan></text>
+<text x="0" y="0" class="key tap">../</text>
 </g>
 <g transform="translate(588, 84)" class="key keypos-19">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -619,7 +619,7 @@ rect.held, rect.combo.held {
 </g>
 <g transform="translate(756, 84)" class="key keypos-22">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap"><tspan style="font-size: 88%">&amp;m_caret</tspan></text>
+<text x="0" y="0" class="key tap">^</text>
 </g>
 <g transform="translate(812, 84)" class="key trans keypos-23">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
@@ -651,7 +651,7 @@ rect.held, rect.combo.held {
 </g>
 <g transform="translate(532, 140)" class="key keypos-30">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap"><tspan style="font-size: 64%">&amp;m_dir_home</tspan></text>
+<text x="0" y="0" class="key tap">~/</text>
 </g>
 <g transform="translate(588, 140)" class="key keypos-31">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -671,7 +671,7 @@ rect.held, rect.combo.held {
 </g>
 <g transform="translate(812, 140)" class="key keypos-35">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap"><tspan style="font-size: 88%">&amp;m_grave</tspan></text>
+<text x="0" y="0" class="key tap">`</text>
 </g>
 <g transform="translate(28, 196)" class="key trans keypos-36">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
