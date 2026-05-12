@@ -75,6 +75,9 @@ parse_config:
     "&none":
       tap: ""
       type: none
+    "&trans":
+      tap: ""
+      type: none
     "&bt BT_SEL 0":
       shifted: $$mdi:bluetooth-connect$$
       tap: ""
@@ -127,7 +130,7 @@ parse_config:
   toggle_label: toggle
   tap_toggle_label: tap-toggle
   trans_legend:
-    tap: ""
+    tap: "$$mdi:transfer$$"
     type: trans
   layer_legend_map: {}
   mark_alternate_layer_activators: true
