@@ -233,6 +233,14 @@
             bindings = <&sk LSHIFT>, <&caps_word>;
             mods = <(MOD_LSFT)>;
         };
+
+        pipe_tilde: pipe_tilde {
+            compatible = "zmk,behavior-mod-morph";
+            label = "PIPE_TILDE";
+            #binding-cells = <0>;
+            bindings = <&kp SV_PIPE>, <&kp SV_TILDE>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     };
 
     macros {
@@ -300,11 +308,11 @@
         display-name = "BASE";
         colemak_layer {
             bindings = <
-    &kp SV_PIPE      &slash         &lessgreater  &bracket     &parenthesis   &brace          &excl_qmark   &plus_equal    &star_hash    &dllr_prcnt   &at_amps       &m_tilde
+    &pipe_tilde      &slash         &lessgreater  &bracket     &parenthesis   &brace          &excl_qmark   &plus_equal    &star_hash    &dllr_prcnt   &at_amps       &m_dir_up
     &kp TAB          &kp Q          &kp W         &kp F        &kp P          &kp B           &kp J         &kp L          &kp U         &kp Y         &kp SV_A_RING  &sqt_quot
     &kp SV_A_UMLAUT  &hml LSHIFT A  &hml LCTRL R  &hml LALT S  &hml LCMD T    &kp G           &kp M         &hmr RCMD N    &hmr RALT E   &hmr RCTRL I  &hmr RSHIFT O  &kp SV_O_UMLAUT
-    &kp LC(B)        &kp Z          &kp X         &kp C        &kp D          &kp V           &kp K         &kp H          &kp SV_COMMA  &kp SV_DOT    &kp SV_MINUS   &caret_grave
-                                                  &lt NUM ESC    &smart_shft  &lt NAV TAB     &lt NAV BSPC  &kp SPACE      &kp RET
+    &caret_grave     &kp Z          &kp X         &kp C        &kp D          &kp V           &kp K         &kp H          &kp SV_COMMA  &kp SV_DOT    &kp SV_MINUS   &m_dir_home
+                                                  &lt NUM ESC  &smart_shft    &lt NAV LC(B)   &lt NAV BSPC  &kp SPACE      &kp RET
             >;
         };
 
@@ -312,8 +320,8 @@
             display-name = "NUM";
             bindings = <
     &trans  &trans  &trans  &trans  &trans  &trans     &trans       &trans  &trans  &trans  &trans    &trans
-    &trans  &trans  &trans  &trans  &trans  &trans     &m_dir_up    &kp N7  &kp N8  &kp N9  &m_caret  &trans
-    &trans  &trans  &trans  &trans  &trans  &trans     &m_dir_home  &kp N4  &kp N5  &kp N6  &kp N0    &m_grave
+    &trans  &trans  &trans  &trans  &trans  &trans     &m_dir_up    &kp N7  &kp N8  &kp N9  &trans    &trans
+    &trans  &trans  &trans  &trans  &trans  &trans     &m_dir_home  &kp N4  &kp N5  &kp N6  &kp N0    &trans 
     &trans  &trans  &trans  &trans  &trans  &trans     &trans       &kp N1  &kp N2  &kp N3  &trans    &trans
                             &trans  &trans  &trans     &trans       &trans  &trans
             >;
@@ -337,7 +345,7 @@
     &trans  &trans  &trans     &trans     &trans     &trans        &mkp LCLK  &mkp MCLK  &mkp RCLK  &trans  &trans  &trans
     &trans  &trans  &mkp RCLK  &mkp MCLK  &mkp LCLK  &trans        &trans     &trans     &trans     &trans  &trans  &trans
     &trans  &trans  &trans     &trans     &trans     &trans        &trans     &trans     &trans     &trans  &trans  &trans
-                               &trans     &mo NAV    &kp LSHIFT    &trans     &trans     &trans
+                               &trans     &kp LSHIFT &mo NAV       &trans     &trans     &trans
             >;
         };
 
