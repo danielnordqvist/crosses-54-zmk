@@ -48,7 +48,7 @@ layers:
   - {t: ',', s: ;}
   - {t: ':', h: .}
   - '-'
-  - '&caret_grave'
+  - {t: ^, s: '`'}
   - {t: '$$mdi:keyboard-esc$$', h: NUM}
   - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$', s: '&caps_word'}
   - {t: '$$mdi:keyboard-tab$$', h: NAV}
