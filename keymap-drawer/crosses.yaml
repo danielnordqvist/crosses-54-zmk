@@ -56,62 +56,61 @@ layers:
   - $$mdi:keyboard-space$$
   - $$mdi:keyboard-return$$
   NUM:
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
   - ../
   - '7'
   - '8'
   - '9'
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
   - ~/
   - '4'
   - '5'
   - '6'
   - '0'
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
   - '1'
   - '2'
   - '3'
-  - {type: trans}
-  - {type: trans}
+  - {type: none}
+  - {type: none}
   - {type: held}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
   NAV:
-  - {type: trans}
   - {type: none}
   - {type: none}
   - {type: none}
@@ -123,7 +122,8 @@ layers:
   - {type: none}
   - {type: none}
   - {type: none}
-  - {type: trans}
+  - {type: none}
+  - {type: none}
   - {type: none}
   - {type: none}
   - $$mdi:file-find-outline$$
@@ -147,7 +147,7 @@ layers:
   - $$mdi:arrow-right-bold$$
   - $$mdi:transfer-down$$
   - {type: none}
-  - {type: trans}
+  - {type: none}
   - $$mdi:undo$$
   - $$mdi:content-cut$$
   - $$mdi:content-copy$$
@@ -158,65 +158,65 @@ layers:
   - {type: none}
   - {type: none}
   - {type: none}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
+  - {type: none}
+  - {type: none}
+  - {type: none}
   - {type: held}
   - {type: held alternate}
-  - {type: trans}
-  - {type: trans}
+  - {type: none}
+  - {type: none}
   MOUSE:
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
   - {t: '$$mdi:mouse-left-click$$', h: left}
   - {t: '$$mdi:mouse$$', h: middle}
   - {t: '$$mdi:mouse-right-click$$', h: right}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
   - {t: '$$mdi:mouse-right-click$$', h: right}
   - {t: '$$mdi:mouse$$', h: middle}
   - {t: '$$mdi:mouse-left-click$$', h: left}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
   - $$mdi:apple-keyboard-shift$$
   - NAV
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
+  - {type: none}
+  - {type: none}
+  - {type: none}
