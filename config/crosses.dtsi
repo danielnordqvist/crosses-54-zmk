@@ -1,11 +1,11 @@
 #include <zephyr/dt-bindings/input/input-event-codes.h>
 
 / {
-    /omit-if-no-ref/ zip_temp_layer: zip_temp_layer {
+    zip_temp_layer: zip_temp_layer {
         compatible = "zmk,input-processor-temp-layer";
         #input-processor-cells = <2>;
         require-prior-idle-ms = <2000>;
-        excluded-positions = <18 19 20 26 27 28 49 50>;
+        excluded-positions = <18 19 20 26 27 28>;
     };
 };
 
