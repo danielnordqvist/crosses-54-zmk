@@ -1,18 +1,18 @@
 layout: {zmk_keyboard: crosses, layout_name: gggw_crosses_54_layout}
 layers:
   BASE:
-  - {t: '|', s: '~'}
-  - {t: /, s: \}
-  - {t: <, s: '>'}
-  - {t: '[', s: ']'}
-  - {t: (, s: )}
-  - {t: '{', s: '}'}
-  - {t: '!', s: '?'}
-  - {t: +, s: '='}
-  - {t: '*', s: '#'}
-  - {t: $, s: '%'}
-  - {t: '@', s: '&'}
+  - Ctl+BRI DN
+  - Ctl+BRI UP
   - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - MUTE
+  - VOL DN
+  - VOL UP
+  - PREV
+  - PP
+  - NEXT
   - $$mdi:keyboard-tab$$
   - Q
   - W
@@ -52,9 +52,9 @@ layers:
   - {t: '$$mdi:keyboard-esc$$', h: NUM}
   - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$', s: '&caps_word'}
   - {t: Ctl+B, h: NAV}
-  - {t: '$$mdi:backspace$$', h: NAV}
+  - {t: '$$mdi:keyboard-return$$', h: NAV}
   - $$mdi:keyboard-space$$
-  - {t: '$$mdi:keyboard-return$$', h: NUM}
+  - {t: '$$mdi:backspace$$', h: NUM}
   NUM:
   - {type: none}
   - {type: none}
