@@ -45,7 +45,7 @@
         compatible = "zmk,input-processor-temp-layer";
         #input-processor-cells = <2>;
         require-prior-idle-ms = <1000>;
-        excluded-positions = <26 27 28>;
+        excluded-positions = <18 19 20 26 27 28>;
     };
 };
 
@@ -159,7 +159,7 @@
     };
 
     macros {};
-/*
+
     conditional_layers {
         compatible = "zmk,conditional-layers";
         fn_layer {
@@ -167,7 +167,7 @@
             then-layer = <FN>;
         };
     };
-*/
+
     /* 
     ╭────────────────────────┬────────────────────────╮ ╭─────────────────────────┬─────────────────────────╮
     │  0   1   2   3   4   5 │  6   7   8   9  10  11 │ │ LN5 LN4 LN3 LN2 LN1 LN0 │ RN0 RN1 RN2 RN3 RN4 RN5 │
@@ -175,7 +175,7 @@
     │ 24  25  26  27  28  29 │ 30  31  32  33  34  35 │ │ LM5 LM4 LM3 LM2 LM1 LM0 │ RM0 RM1 RM2 RM3 RM4 RM5 │
     │ 36  37  38  39  40  41 │ 42  43  44  45  46  47 │ │ LB5 LB4 LB3 LB2 LB1 LB0 │ RB0 RB1 RB2 RB3 RB4 RB5 │
     ╰───────────╮ 48  49  50 │ 51  52  53 ╭───────────╯ ╰───────────╮ LH2 LH1 LH0 │ RH0 RH1 RH2 ╭───────────╯
-                ╰────────────┴────────────╯                           ╰───────────┴─────────────╯
+                ╰────────────┴────────────╯                         ╰─────────────┴─────────────╯
 */
 
     keymap {
@@ -224,18 +224,19 @@
             >;
         };
 
+        fn_layer {
+            display-name = "FN";
+            bindings = <
+    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &out OUT_TOG      &trans  &kp F10   &kp F11  &kp F12  &trans  &trans
+    &trans        &trans        &trans        &trans        &trans        &trans            &trans  &kp F7    &kp F8   &kp F9   &trans  &trans
+    &trans        &trans        &trans        &trans        &trans        &trans            &trans  &kp F4    &kp F5   &kp F6   &trans  &trans
+    &trans        &trans        &trans        &trans        &trans        &trans            &trans  &kp F1    &kp F2   &kp F3   &trans  &trans
+                                              &trans        &trans        &trans            &trans  &trans    &trans
+            >;
+        };
     };
 };
 
 
-/*
-        fn_layer {
-            bindings = <
-    &bt BT_SEL 0  &bt BT_SEL 1      &bt BT_SEL 2  &bt BT_SEL 3    &bt BT_SEL 4      &out OUT_TOG    &none      &kp F10   &kp F11  &kp F12  &none  &none
-    &none         &none             &kp BRI_DN    &kp C_NEXT      &kp C_VOL_UP      &none           &none      &kp F7    &kp F8   &kp F9   &none  &none
-    &none         &kp LSHIFT        &kp LCTRL     &hml LALT C_PP  &hml LGUI C_MUTE  &none           &none      &kp F4    &kp F5   &kp F6   &none  &none
-    &none         &none             &kp BRI_UP    &kp C_PREV      &kp C_VOL_DN      &none           &none      &kp F1    &kp F2   &kp F3   &none  &none
-                                                  &none           &none             &none           &kp SPACE  &kp BSPC  &kp RET
-            >;
-        };
-*/
+
+    
