@@ -184,22 +184,22 @@
         base_layer {
             display-name = "BASE";
             bindings = <
-    &kp BRI_DN       &kp BRI_UP     &none         &none        &none          &none          &kp C_MUTE    &kp C_VOL_DN   &kp C_VOL_UP  &kp C_PREV    &kp C_PP       &kp C_NEXT
-    &kp TAB          &kp Q          &kp W         &kp F        &kp P          &kp B           &kp J         &kp L          &kp U         &kp Y         &kp SV_A_RING  &sqt_quot
-    &kp SV_A_UMLAUT  &hml LSHIFT A  &hml LCTRL R  &hml LALT S  &hml LCMD T    &kp G           &kp M         &hmr RCMD N    &hmr RALT E   &hmr RCTRL I  &hmr RSHIFT O  &kp SV_O_UMLAUT
-    &none            &kp Z          &kp X         &kp C        &kp D          &kp V           &kp K         &kp H          &kp SV_COMMA  &kp SV_DOT    &kp SV_MINUS   &none
-                                                  &lt NUM ESC  &smart_shft    &lt NAV TMUX    &lt NAV RET   &kp SPACE      &lt NUM BSPC
+    &kp BRI_DN       &kp BRI_UP     &none         &none        &none        &none           &kp C_MUTE    &kp C_VOL_DN   &kp C_VOL_UP  &kp C_PREV    &kp C_PP       &kp C_NEXT
+    &kp TAB          &kp Q          &kp W         &kp F        &kp P        &kp B           &kp J         &kp L          &kp U         &kp Y         &kp SV_A_RING  &sqt_quot
+    &kp SV_A_UMLAUT  &hml LSHIFT A  &hml LCTRL R  &hml LALT S  &hml LCMD T  &kp G           &kp M         &hmr RCMD N    &hmr RALT E   &hmr RCTRL I  &hmr RSHIFT O  &kp SV_O_UMLAUT
+    &none            &kp Z          &kp X         &kp C        &kp D        &kp V           &kp K         &kp H          &kp SV_COMMA  &kp SV_DOT    &kp SV_MINUS   &none
+                                                  &lt NUM ESC  &sk LSHIFT   &lt NAV TMUX    &lt NAV RET   &kp SPACE      &lt NUM BSPC
             >;
         };
 
         num_layer {
             display-name = "NUM";
             bindings = <
-    &trans          &trans       &trans        &trans       &trans       &trans         &trans        &trans  &trans  &trans  &trans       &trans
-    &kp SV_HASH     &kp SV_BSLH  &kp SV_AT     &kp SV_LBRC  &kp SV_RBRC  &kp SV_AMPS    &kp SV_EQUAL  &kp N7  &kp N8  &kp N9  &kp SV_PRCNT &kp SV_GRAVE
-    &kp SV_TILDE    &kp SV_FSLH  &kp SV_STAR   &kp SV_LPAR  &kp SV_RPAR  &kp SV_EXCL    &kp SV_PLUS   &kp N4  &kp N5  &kp N6  &kp N0       &kp SV_DLLR 
-    &kp SV_CARET    &kp SV_LT    &kp SV_GT     &kp SV_LBKT  &kp SV_RBKT  &kp SV_QMARK   &kp SV_PIPE   &kp N1  &kp N2  &kp N3  &trans       &trans
-                                               &trans       &trans       &trans         &trans        &trans  &trans
+    &trans        &trans       &trans       &trans       &trans        &trans          &trans       &trans  &trans  &trans  &trans        &trans
+    &kp SV_GRAVE  &kp SV_PLUS  &kp SV_AT    &kp SV_LBRC  &kp SV_EXCL   &kp SV_RBRC     &kp SV_AMPS  &kp N7  &kp N8  &kp N9  &kp SV_PRCNT  &kp SV_HASH
+    &kp SV_TILDE  &kp SV_STAR  &kp SV_FSLH  &kp SV_LPAR  &kp SV_EQUAL  &kp SV_RPAR     &kp SV_BSLH  &kp N4  &kp N5  &kp N6  &kp N0        &kp SV_DLLR 
+    &kp SV_CARET  &kp SV_LT    &kp SV_GT    &kp SV_LBKT  &kp SV_QMARK  &kp SV_RBKT     &kp SV_PIPE  &kp N1  &kp N2  &kp N3  &trans        &trans
+                                              &trans       &trans        &trans          &trans       &trans  &trans
             >;
         };
 
@@ -228,10 +228,10 @@
         fn_layer {
             display-name = "FN";
             bindings = <
-    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &out OUT_TOG      &trans  &kp F10   &kp F11  &kp F12  &trans  &trans
-    &trans        &trans        &trans        &trans        &trans        &trans            &trans  &kp F7    &kp F8   &kp F9   &trans  &trans
-    &trans        &trans        &trans        &trans        &trans        &trans            &trans  &kp F4    &kp F5   &kp F6   &trans  &trans
-    &trans        &trans        &trans        &trans        &trans        &trans            &trans  &kp F1    &kp F2   &kp F3   &trans  &trans
+    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &out OUT_TOG      &trans  &trans    &trans   &trans  &trans   &trans
+    &trans        &trans        &trans        &trans        &trans        &trans            &trans  &kp F7    &kp F8   &kp F9  &kp F10  &trans
+    &trans        &trans        &trans        &trans        &trans        &trans            &trans  &kp F4    &kp F5   &kp F6  &kp F11  &trans
+    &trans        &trans        &trans        &trans        &trans        &trans            &trans  &kp F1    &kp F2   &kp F3  &kp F12  &trans
                                               &trans        &trans        &trans            &trans  &trans    &trans
             >;
         };
