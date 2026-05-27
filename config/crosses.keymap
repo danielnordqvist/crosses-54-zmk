@@ -244,12 +244,12 @@
             >;
         };
 
-        layer_5 {
+        symbol {
             bindings = <
 &trans  &trans        &trans       &trans       &trans        &trans        &trans        &trans        &trans        &trans       &trans        &trans
-&trans  &kt SV_GRAVE  &kt SV_LT    &kt SV_GT    &kp SV_MINUS  &kt SV_PIPE   &kt SV_CARET  &kt SV_LBRC   &kt SV_RBRC   &kt SV_DLLR  &kt SV_EXCL   &trans
-&trans  &kt SV_TILDE  &kp SV_STAR  &kt SV_FSLH  &kt SV_EQUAL  &kt SV_AMPS   &kt SV_HASH   &kt SV_LPAR   &kt SV_RPAR   &kt SV_SEMI  &kp SV_QMARK  &trans
-&trans  &kt SV_BSLH   &kt SV_PLUS  &kt SV_LBKT  &kt SV_RBKT   &kt SV_PRCNT  &kt SV_AT     &kp SV_COLON  &kt SV_COMMA  &kp SV_DOT   &kp SV_MINUS  &trans
+&trans  &kp SV_GRAVE  &kt SV_LT    &kp SV_GT    &kp SV_MINUS  &kp SV_PIPE   &kp SV_CARET  &kp SV_LBRC   &kp SV_RBRC   &kp SV_DLLR  &kp SV_EXCL   &trans
+&trans  &kp SV_TILDE  &kp SV_STAR  &kp SV_FSLH  &kp SV_EQUAL  &kp SV_AMPS   &kp SV_HASH   &kp SV_LPAR   &kp SV_RPAR   &kp SV_SEMI  &kp SV_QMARK  &trans
+&trans  &kp SV_BSLH   &kp SV_PLUS  &kp SV_LBKT  &kp SV_RBKT   &kp SV_PRCNT  &kp SV_AT     &kp SV_COLON  &kp SV_COMMA  &kp SV_DOT   &kp SV_MINUS  &trans
                                    &trans       &trans        &trans        &trans        &trans        &trans
             >;
         };
