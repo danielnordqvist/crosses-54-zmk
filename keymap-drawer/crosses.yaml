@@ -275,7 +275,7 @@ layers:
   - {type: held}
   - {type: none}
   - {type: held}
-  '5':
+  symbol:
   - {type: none}
   - {type: none}
   - {type: none}
@@ -289,38 +289,38 @@ layers:
   - {type: none}
   - {type: none}
   - {type: none}
-  - {t: '`', h: toggle}
+  - '`'
   - {t: <, h: toggle}
-  - {t: '>', h: toggle}
+  - '>'
   - '-'
-  - {t: '|', h: toggle}
-  - {t: ^, h: toggle}
-  - {t: '{', h: toggle}
-  - {t: '}', h: toggle}
-  - {t: $, h: toggle}
-  - {t: '!', h: toggle}
+  - '|'
+  - ^
+  - '{'
+  - '}'
+  - $
+  - '!'
   - {type: none}
   - {type: none}
-  - {t: '~', h: toggle}
+  - '~'
   - '*'
-  - {t: /, h: toggle}
-  - {t: '=', h: toggle}
-  - {t: '&', h: toggle}
-  - {t: '#', h: toggle}
-  - {t: (, h: toggle}
-  - {t: ), h: toggle}
-  - {t: ;, h: toggle}
+  - /
+  - '='
+  - '&'
+  - '#'
+  - (
+  - )
+  - ;
   - '?'
   - {type: none}
   - {type: none}
-  - {t: \, h: toggle}
-  - {t: +, h: toggle}
-  - {t: '[', h: toggle}
-  - {t: ']', h: toggle}
-  - {t: '%', h: toggle}
-  - {t: '@', h: toggle}
+  - \
+  - +
+  - '['
+  - ']'
+  - '%'
+  - '@'
   - ':'
-  - {t: ',', h: toggle, s: ;}
+  - {t: ',', s: ;}
   - {t: ., s: ':'}
   - '-'
   - {type: none}
