@@ -1,12 +1,14 @@
+#include <zephyr/dt-bindings/input/input-event-codes.h>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/outputs.h>
-#include <zephyr/dt-bindings/input/input-event-codes.h>
+#include <dt-bindings/zmk/pointing.h>
 
 #ifndef KEYMAP_DRAWER
+
 #include "keys_sv.h"
+
 #endif
 
 #define BASE    0
@@ -14,10 +16,10 @@
 #define NAV     2
 #define MOUSE   3
 #define FN      4
-
 #define QUICK_TAP_MS 175
 
 /* App shortcuts */
+
 #define M_FIND  LG(F)
 #define M_UNDO  LG(Z)
 #define M_COPY  LG(C)
@@ -27,7 +29,6 @@
 #define M_SAVE  LG(S)
 #define M_NEW   LG(N)
 #define TMUX    LC(B)
-
 #define BRI_UP LC(C_BRI_UP)
 #define BRI_DN LC(C_BRI_DN)
 
@@ -42,7 +43,9 @@
 */
 
 / {
-    /omit-if-no-ref/ zip_temp_layer2: zip_temp_layer2 {
+    /omit-if-no-ref/
+
+    zip_temp_layer2: zip_temp_layer2 {
         compatible = "zmk,input-processor-temp-layer";
         #input-processor-cells = <2>;
         require-prior-idle-ms = <1000>;
@@ -51,12 +54,9 @@
 };
 
 / {
-    chosen {
-        zmk,physical-layout = &gggw_crosses_54_layout;
-    };
+    chosen { zmk,physical-layout = &gggw_crosses_54_layout; };
 
     behaviors {
-
         /*
          * Sticky key settings
          */
@@ -83,12 +83,15 @@
             quick-tap-ms = <QUICK_TAP_MS>;
             require-prior-idle-ms = <150>;
             bindings = <&kp>, <&kp>;
-            hold-trigger-key-positions =
-                <6 7 8 9 10 11
+
+            hold-trigger-key-positions = <
+6 7 8 9 10 11
                  18 19 20 21 22 23
                  30 31 32 33 34 35
                  42 43 44 45 46 47
-                 51 52 53>;
+                 51 52 5
+            >;
+
             hold-trigger-on-release;
         };
 
@@ -105,19 +108,22 @@
             quick-tap-ms = <QUICK_TAP_MS>;
             require-prior-idle-ms = <150>;
             bindings = <&kp>, <&kp>;
-            hold-trigger-key-positions =
-                <0 1 2 3 4 5
+
+            hold-trigger-key-positions = <
+0 1 2 3 4 5
                  12 13 14 15 16 17
                  24 25 26 27 28 29
                  36 37 38 39 40 41
-                 48 49 50>;
+                 48 49 5
+            >;
+
             hold-trigger-on-release;
         };
 
         /*
          * Navigation hold taps
          */
-/*
+        /*
         mt_home: mt_home {
             compatible = "zmk,behavior-hold-tap";
             label = "MT_HOME";
@@ -147,6 +153,7 @@
             label = "SQT_QUOT";
             #binding-cells = <0>;
             bindings = <&kp SV_SQT>, <&kp SV_DQT>;
+
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
@@ -155,14 +162,14 @@
             label = "SMART_SHIFT";
             #binding-cells = <0>;
             bindings = <&sk LSHIFT>, <&caps_word>;
+
             mods = <(MOD_LSFT)>;
         };
     };
 
-    macros {};
-
     conditional_layers {
         compatible = "zmk,conditional-layers";
+
         fn_layer {
             if-layers = <NUM NAV>;
             then-layer = <FN>;
@@ -181,63 +188,70 @@
 
     keymap {
         compatible = "zmk,keymap";
+
         base_layer {
             display-name = "BASE";
             bindings = <
-    &kp BRI_DN       &kp BRI_UP     &none         &none        &none        &none           &kp C_MUTE    &kp C_VOL_DN   &kp C_VOL_UP  &kp C_PREV    &kp C_PP       &kp C_NEXT
-    &kp TAB          &kp Q          &kp W         &kp F        &kp P        &kp B           &kp J         &kp L          &kp U         &kp Y         &kp SV_A_RING  &sqt_quot
-    &kp SV_A_UMLAUT  &hml LSHIFT A  &hml LCTRL R  &hml LALT S  &hml LCMD T  &kp G           &kp M         &hmr RCMD N    &hmr RALT E   &hmr RCTRL I  &hmr RSHIFT O  &kp SV_O_UMLAUT
-    &none            &kp Z          &kp X         &kp C        &kp D        &kp V           &kp K         &kp H          &kp SV_COMMA  &kp SV_DOT    &kp SV_MINUS   &none
-                                                  &lt NUM ESC  &sk LSHIFT   &lt NAV TMUX    &lt NAV RET   &kp SPACE      &lt NUM BSPC
+&kp BRI_DN       &kp BRI_UP     &none         &none        &none        &none         &kp C_MUTE   &kp C_VOL_DN  &kp C_VOL_UP  &kp C_PREV    &kp C_PP       &kp C_NEXT
+&kp TAB          &kp Q          &kp W         &kp F        &kp P        &kp B         &kp J        &kp L         &kp U         &kp Y         &kp SV_A_RING  &sqt_quot
+&kp SV_A_UMLAUT  &hml LSHIFT A  &hml LCTRL R  &hml LALT S  &hml LCMD T  &kp G         &kp M        &hmr RCMD N   &hmr RALT E   &hmr RCTRL I  &hmr RSHIFT O  &kp SV_O_UMLAUT
+&none            &kp Z          &kp X         &kp C        &kp D        &kp V         &kp K        &kp H         &kp SV_COMMA  &kp SV_DOT    &kp SV_MINUS   &none
+                                              &lt NUM ESC  &sk LSHIFT   &lt NAV TMUX  &lt NAV RET  &kp SPACE     &lt NUM BSPC
             >;
         };
 
         num_layer {
             display-name = "NUM";
             bindings = <
-    &trans        &trans       &trans       &trans       &trans        &trans          &trans       &trans  &trans  &trans  &trans        &trans
-    &kp SV_GRAVE  &kp SV_AT    &kp SV_PLUS  &kp SV_LBRC  &kp SV_EXCL   &kp SV_RBRC     &kp SV_AMPS  &kp N7  &kp N8  &kp N9  &kp SV_PRCNT  &kp SV_HASH
-    &kp SV_TILDE  &kp SV_STAR  &kp SV_FSLH  &kp SV_LPAR  &kp SV_EQUAL  &kp SV_RPAR     &kp SV_BSLH  &kp N4  &kp N5  &kp N6  &kp N0        &kp SV_DLLR 
-    &kp SV_CARET  &kp SV_LT    &kp SV_GT    &kp SV_LBKT  &kp SV_QMARK  &kp SV_RBKT     &kp SV_PIPE  &kp N1  &kp N2  &kp N3  &trans        &trans
-                                              &trans       &trans        &trans          &trans       &trans  &trans
+&trans        &trans       &trans       &trans       &trans        &trans       &trans       &trans  &trans  &trans  &trans        &trans
+&kp SV_GRAVE  &kp SV_AT    &kp SV_PLUS  &kp SV_LBRC  &kp SV_EXCL   &kp SV_RBRC  &kp SV_AMPS  &kp N7  &kp N8  &kp N9  &kp SV_PRCNT  &kp SV_HASH
+&kp SV_TILDE  &kp SV_STAR  &kp SV_FSLH  &kp SV_LPAR  &kp SV_EQUAL  &kp SV_RPAR  &kp SV_BSLH  &kp N4  &kp N5  &kp N6  &kp N0        &kp SV_DLLR
+&kp SV_CARET  &kp SV_LT    &kp SV_GT    &kp SV_LBKT  &kp SV_QMARK  &kp SV_RBKT  &kp SV_PIPE  &kp N1  &kp N2  &kp N3  &trans        &trans
+                                        &trans       &trans        &trans       &trans       &trans  &trans
             >;
         };
 
         nav_layer {
             display-name = "NAV";
             bindings = <
-    &trans  &none              &none      &none             &none      &none          &none   &none     &none     &none      &none      &none
-    &trans  &none              &none      &kp M_FIND        &kp M_NEW  &none          &none   &kp HOME  &kp UP    &kp END    &kp PG_UP  &none
-    &none   &hml LSHIFT M_ALL  &kp LCTRL  &hml LALT M_SAVE  &kp LCMD   &none          &none   &kp LEFT  &kp DOWN  &kp RIGHT  &kp PG_DN  &none
-    &trans  &kp M_UNDO         &kp M_CUT  &kp M_COPY        &none      &kp M_PASTE    &none   &none     &none     &none      &none      &trans
-                                          &trans            &trans     &trans         &trans  &trans    &trans
+&trans  &none              &none      &none             &none      &none        &none   &none     &none     &none      &none      &none
+&trans  &none              &none      &kp M_FIND        &kp M_NEW  &none        &none   &kp HOME  &kp UP    &kp END    &kp PG_UP  &none
+&none   &hml LSHIFT M_ALL  &kp LCTRL  &hml LALT M_SAVE  &kp LCMD   &none        &none   &kp LEFT  &kp DOWN  &kp RIGHT  &kp PG_DN  &none
+&trans  &kp M_UNDO         &kp M_CUT  &kp M_COPY        &none      &kp M_PASTE  &none   &none     &none     &none      &none      &trans
+                                      &trans            &trans     &trans       &trans  &trans    &trans
             >;
         };
 
         mouse_layer {
             display-name = "MOUSE";
             bindings = <
-    &trans  &trans      &trans     &trans      &trans     &trans       &trans     &trans     &trans     &trans  &trans  &trans
-    &trans  &trans      &trans     &trans      &trans     &trans       &mkp LCLK  &mkp MCLK  &mkp RCLK  &trans  &trans  &trans
-    &trans  &trans      &mkp RCLK  &mkp MCLK   &mkp LCLK  &trans       &trans     &trans     &trans     &trans  &trans  &trans
-    &trans  &kp M_UNDO  &kp M_CUT  &kp M_COPY  &trans     &kp M_PASTE  &trans     &trans     &trans     &trans  &trans  &trans
-                                   &trans      &trans     &trans       &trans     &trans     &trans
+&trans  &trans      &trans     &trans      &trans     &trans       &trans     &trans     &trans     &trans  &trans  &trans
+&trans  &trans      &trans     &trans      &trans     &trans       &mkp LCLK  &mkp MCLK  &mkp RCLK  &trans  &trans  &trans
+&trans  &trans      &mkp RCLK  &mkp MCLK   &mkp LCLK  &trans       &trans     &trans     &trans     &trans  &trans  &trans
+&trans  &kp M_UNDO  &kp M_CUT  &kp M_COPY  &trans     &kp M_PASTE  &trans     &trans     &trans     &trans  &trans  &trans
+                               &trans      &trans     &trans       &trans     &trans     &trans
             >;
         };
 
         fn_layer {
             display-name = "FN";
             bindings = <
-    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &out OUT_TOG      &trans  &trans    &trans   &trans  &trans   &trans
-    &trans        &trans        &trans        &trans        &trans        &trans            &trans  &kp F7    &kp F8   &kp F9  &kp F10  &trans
-    &trans        &trans        &trans        &trans        &trans        &trans            &trans  &kp F4    &kp F5   &kp F6  &kp F11  &trans
-    &trans        &trans        &trans        &trans        &trans        &trans            &trans  &kp F1    &kp F2   &kp F3  &kp F12  &trans
-                                              &trans        &trans        &trans            &trans  &trans    &trans
+&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &out OUT_TOG  &trans  &trans  &trans  &trans  &trans   &trans
+&trans        &trans        &trans        &trans        &trans        &trans        &trans  &kp F7  &kp F8  &kp F9  &kp F10  &trans
+&trans        &trans        &trans        &trans        &trans        &trans        &trans  &kp F4  &kp F5  &kp F6  &kp F11  &trans
+&trans        &trans        &trans        &trans        &trans        &trans        &trans  &kp F1  &kp F2  &kp F3  &kp F12  &trans
+                                          &trans        &trans        &trans        &trans  &trans  &trans
+            >;
+        };
+
+        layer_5 {
+            bindings = <
+&trans  &trans        &trans       &trans       &trans        &trans        &trans        &trans        &trans        &trans       &trans        &trans
+&trans  &kt SV_GRAVE  &kt SV_LT    &kt SV_GT    &kp SV_MINUS  &kt SV_PIPE   &kt SV_CARET  &kt SV_LBRC   &kt SV_RBRC   &kt SV_DLLR  &kt SV_EXCL   &trans
+&trans  &kt SV_TILDE  &kp SV_STAR  &kt SV_FSLH  &kt SV_EQUAL  &kt SV_AMPS   &kt SV_HASH   &kt SV_LPAR   &kt SV_RPAR   &kt SV_SEMI  &kp SV_QMARK  &trans
+&trans  &kt SV_BSLH   &kt SV_PLUS  &kt SV_LBKT  &kt SV_RBKT   &kt SV_PRCNT  &kt SV_AT     &kp SV_COLON  &kt SV_COMMA  &kp SV_DOT   &kp SV_MINUS  &trans
+                                   &trans       &trans        &trans        &trans        &trans        &trans
             >;
         };
     };
 };
-
-
-
-    
