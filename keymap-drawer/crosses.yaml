@@ -41,7 +41,7 @@ layers:
   - Z
   - X
   - C
-  - D
+  - {t: D, h: NUM}
   - V
   - K
   - H
@@ -49,13 +49,14 @@ layers:
   - {t: ., s: ':'}
   - '-'
   - $$mdi:keyboard-return$$
-  - {t: '$$mdi:keyboard-esc$$', h: NUM}
+  - {t: '$$mdi:keyboard-esc$$', h: SYM}
   - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
   - {t: Ctl+B, h: NAV}
   - {t: '$$mdi:keyboard-return$$', h: NAV}
   - $$mdi:keyboard-space$$
-  - {t: '$$mdi:backspace$$', h: NUM}
-  NUM:
+  - $$mdi:backspace$$
+  SYM:
+  - {type: none}
   - {type: none}
   - {type: none}
   - {type: none}
@@ -69,47 +70,101 @@ layers:
   - {type: none}
   - {type: none}
   - '`'
-  - '@'
-  - +
+  - <
+  - '>'
+  - '-'
+  - '|'
+  - ^
   - '{'
-  - '!'
   - '}'
-  - '&'
-  - '7'
-  - '8'
-  - '9'
-  - '%'
-  - '#'
+  - $
+  - '!'
+  - {type: none}
+  - {type: none}
   - '~'
   - '*'
   - /
-  - (
   - '='
+  - '&'
+  - '#'
+  - (
   - )
-  - \
-  - '4'
-  - '5'
-  - '6'
-  - '0'
-  - $
-  - ^
-  - <
-  - '>'
-  - '['
+  - ;
   - '?'
-  - ']'
-  - '|'
-  - '1'
-  - '2'
-  - '3'
   - {type: none}
+  - {type: none}
+  - \
+  - +
+  - '['
+  - ']'
+  - '%'
+  - '@'
+  - ':'
+  - {t: ',', s: ;}
+  - {t: ., s: ':'}
+  - '-'
   - {type: none}
   - {type: held}
   - {type: none}
   - {type: none}
   - {type: none}
   - {type: none}
-  - {type: held alternate}
+  - {type: none}
+  NUM:
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - '7'
+  - '8'
+  - '9'
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - '4'
+  - '5'
+  - '6'
+  - '0'
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: held}
+  - {type: none}
+  - {type: none}
+  - '1'
+  - '2'
+  - '3'
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
   NAV:
   - {type: none}
   - {type: none}
@@ -261,7 +316,7 @@ layers:
   - {type: none}
   - {type: none}
   - {type: none}
-  - {type: none}
+  - {type: held}
   - {type: none}
   - {type: none}
   - F1
@@ -269,64 +324,9 @@ layers:
   - F3
   - F12
   - {type: none}
-  - {type: held}
   - {type: none}
-  - {type: held}
-  - {type: held}
   - {type: none}
   - {type: held}
-  SYM:
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - '`'
-  - {t: <, h: toggle}
-  - '>'
-  - '-'
-  - '|'
-  - ^
-  - '{'
-  - '}'
-  - $
-  - '!'
-  - {type: none}
-  - {type: none}
-  - '~'
-  - '*'
-  - /
-  - '='
-  - '&'
-  - '#'
-  - (
-  - )
-  - ;
-  - '?'
-  - {type: none}
-  - {type: none}
-  - \
-  - +
-  - '['
-  - ']'
-  - '%'
-  - '@'
-  - ':'
-  - {t: ',', s: ;}
-  - {t: ., s: ':'}
-  - '-'
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
+  - {type: held}
   - {type: none}
   - {type: none}
