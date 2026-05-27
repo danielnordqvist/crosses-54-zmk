@@ -48,7 +48,7 @@ layers:
   - {t: ',', s: ;}
   - {t: ., s: ':'}
   - '-'
-  - {type: none}
+  - $$mdi:keyboard-return$$
   - {t: '$$mdi:keyboard-esc$$', h: NUM}
   - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
   - {t: Ctl+B, h: NAV}
@@ -275,7 +275,7 @@ layers:
   - {type: held}
   - {type: none}
   - {type: held}
-  symbol:
+  SYM:
   - {type: none}
   - {type: none}
   - {type: none}
