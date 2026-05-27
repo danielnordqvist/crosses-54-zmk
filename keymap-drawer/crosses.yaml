@@ -275,3 +275,58 @@ layers:
   - {type: held}
   - {type: none}
   - {type: held}
+  '5':
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {t: '`', h: toggle}
+  - {t: <, h: toggle}
+  - {t: '>', h: toggle}
+  - '-'
+  - {t: '|', h: toggle}
+  - {t: ^, h: toggle}
+  - {t: '{', h: toggle}
+  - {t: '}', h: toggle}
+  - {t: $, h: toggle}
+  - {t: '!', h: toggle}
+  - {type: none}
+  - {type: none}
+  - {t: '~', h: toggle}
+  - '*'
+  - {t: /, h: toggle}
+  - {t: '=', h: toggle}
+  - {t: '&', h: toggle}
+  - {t: '#', h: toggle}
+  - {t: (, h: toggle}
+  - {t: ), h: toggle}
+  - {t: ;, h: toggle}
+  - '?'
+  - {type: none}
+  - {type: none}
+  - {t: \, h: toggle}
+  - {t: +, h: toggle}
+  - {t: '[', h: toggle}
+  - {t: ']', h: toggle}
+  - {t: '%', h: toggle}
+  - {t: '@', h: toggle}
+  - ':'
+  - {t: ',', h: toggle, s: ;}
+  - {t: ., s: ':'}
+  - '-'
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
