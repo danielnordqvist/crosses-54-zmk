@@ -81,10 +81,10 @@ layers:
   - '!'
   - {type: none}
   - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
+  - $$mdi:apple-keyboard-shift$$
+  - $$mdi:apple-keyboard-control$$
+  - $$mdi:apple-keyboard-option$$
+  - $$mdi:apple-keyboard-command$$
   - {type: none}
   - '#'
   - (
@@ -142,10 +142,10 @@ layers:
   - {t: '=', h: '$$mdi:apple-keyboard-command$$'}
   - '&'
   - {type: none}
-  - '4'
-  - '5'
-  - '6'
-  - '0'
+  - {t: '4', h: '$$mdi:apple-keyboard-command$$'}
+  - {t: '5', h: '$$mdi:apple-keyboard-option$$'}
+  - {t: '6', h: '$$mdi:apple-keyboard-control$$'}
+  - {t: '0', h: '$$mdi:apple-keyboard-shift$$'}
   - {type: none}
   - {type: none}
   - \
@@ -203,11 +203,11 @@ layers:
   - $$mdi:arrow-right-bold$$
   - {type: none}
   - {type: none}
-  - $$mdi:undo$$
-  - $$mdi:content-cut$$
-  - $$mdi:content-copy$$
   - {type: none}
-  - $$mdi:content-paste$$
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
   - {type: none}
   - {type: none}
   - {type: none}
@@ -239,17 +239,23 @@ layers:
   - {type: none}
   - {type: none}
   - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - '&mkp MB4'
+  - {t: '$$mdi:mouse-right-click$$', h: right}
+  - {t: '$$mdi:mouse$$', h: middle}
+  - {t: '$$mdi:mouse-left-click$$', h: left}
+  - '&mkp MB5'
+  - '&mkp MB5'
   - {t: '$$mdi:mouse-left-click$$', h: left}
   - {t: '$$mdi:mouse$$', h: middle}
   - {t: '$$mdi:mouse-right-click$$', h: right}
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - {t: '$$mdi:mouse-right-click$$', h: right}
-  - {t: '$$mdi:mouse$$', h: middle}
-  - {t: '$$mdi:mouse-left-click$$', h: left}
+  - '&mkp MB4'
   - {type: none}
   - {type: none}
   - {type: none}
@@ -257,12 +263,6 @@ layers:
   - {type: none}
   - {type: none}
   - {type: none}
-  - {type: none}
-  - $$mdi:undo$$
-  - $$mdi:content-cut$$
-  - $$mdi:content-copy$$
-  - {type: none}
-  - $$mdi:content-paste$$
   - {type: none}
   - {type: none}
   - {type: none}
