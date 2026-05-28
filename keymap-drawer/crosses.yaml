@@ -1,12 +1,12 @@
 layout: {zmk_keyboard: crosses, layout_name: gggw_crosses_54_layout}
 layers:
   BASE:
-  - Ctl+BRI DN
-  - Ctl+BRI UP
   - {type: none}
+  - $$mdi:undo$$
+  - $$mdi:content-cut$$
+  - $$mdi:content-copy$$
   - {type: none}
-  - {type: none}
-  - {type: none}
+  - $$mdi:content-paste$$
   - MUTE
   - VOL DN
   - VOL UP
@@ -37,11 +37,11 @@ layers:
   - {t: I, h: '$$mdi:apple-keyboard-control$$'}
   - {t: O, h: '$$mdi:apple-keyboard-shift$$'}
   - Ö
-  - {type: none}
+  - $$mdi:backspace$$
   - Z
   - X
   - C
-  - {t: D, h: NUM}
+  - D
   - V
   - K
   - H
@@ -53,8 +53,8 @@ layers:
   - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
   - {t: Ctl+B, h: NAV}
   - {t: '$$mdi:keyboard-return$$', h: NAV}
-  - $$mdi:keyboard-space$$
-  - $$mdi:backspace$$
+  - {t: '$$mdi:keyboard-space$$', h: NUM}
+  - {t: '$$mdi:keyboard-tab$$', h: SYM}
   SYM:
   - {type: none}
   - {type: none}
@@ -109,7 +109,7 @@ layers:
   - {type: none}
   - {type: none}
   - {type: none}
-  - {type: none}
+  - {type: held alternate}
   NUM:
   - {type: none}
   - {type: none}
@@ -125,14 +125,9 @@ layers:
   - {type: none}
   - {type: none}
   - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - '7'
-  - '8'
   - '9'
+  - '8'
+  - '7'
   - {type: none}
   - {type: none}
   - {type: none}
@@ -142,28 +137,33 @@ layers:
   - {type: none}
   - {type: none}
   - {type: none}
-  - '4'
-  - '5'
   - '6'
+  - '5'
+  - '4'
+  - {type: none}
+  - {type: none}
+  - $$mdi:apple-keyboard-command$$
+  - $$mdi:apple-keyboard-option$$
+  - $$mdi:apple-keyboard-control$$
+  - $$mdi:apple-keyboard-shift$$
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - '3'
+  - '2'
+  - '1'
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {t: ',', s: ;}
+  - {t: ., s: ':'}
+  - '-'
+  - {type: none}
+  - {type: none}
   - '0'
   - {type: none}
   - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
   - {type: held}
-  - {type: none}
-  - {type: none}
-  - '1'
-  - '2'
-  - '3'
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
   - {type: none}
   NAV:
   - {type: none}
@@ -316,7 +316,7 @@ layers:
   - {type: none}
   - {type: none}
   - {type: none}
-  - {type: held}
+  - {type: none}
   - {type: none}
   - {type: none}
   - F1
@@ -328,5 +328,5 @@ layers:
   - {type: none}
   - {type: held}
   - {type: held}
-  - {type: none}
+  - {type: held}
   - {type: none}
