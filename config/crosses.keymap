@@ -192,11 +192,11 @@
         base_layer {
             display-name = "BASE";
             bindings = <
-&none            &kp M_UNDO     &kp M_CUT     &kp M_COPY   &none        &kp M_PASTE       &kp C_MUTE   &kp C_VOL_DN   &kp C_VOL_UP  &kp C_PREV    &kp C_PP       &kp C_NEXT
-&none            &kp Q          &kp W         &kp F        &kp P        &kp B             &kp J        &kp L          &kp U         &kp Y         &kp SV_A_RING  &sqt_quot
-&kp SV_A_UMLAUT  &hml LSHIFT A  &hml LCTRL R  &hml LALT S  &hml LCMD T  &kp G             &kp M        &hmr RCMD N    &hmr RALT E   &hmr RCTRL I  &hmr RSHIFT O  &kp SV_O_UMLAUT
-&none            &kp Z          &kp X         &kp C        &kp D        &kp V             &kp K        &kp H          &kp SV_COMMA  &kp SV_DOT    &kp SV_MINUS   &kp RET
-                                              &lt SYM ESC  &sk LSHIFT   &lt NAV TMUX      &lt NAV TAB  &lt NUM SPACE  &kp BSPC
+&none            &kp M_UNDO     &kp M_CUT     &kp M_COPY   &none           &kp M_PASTE       &kp C_MUTE   &kp C_VOL_DN   &kp C_VOL_UP  &kp C_PREV    &kp C_PP       &kp C_NEXT
+&kp TAB          &kp Q          &kp W         &kp F        &kp P           &kp B             &kp J        &kp L          &kp U         &kp Y         &kp SV_A_RING  &kp SV_A_UMLAUT
+&none            &hml LSHIFT A  &hml LCTRL R  &hml LALT S  &hml LCMD T     &kp G             &kp M        &hmr RCMD N    &hmr RALT E   &hmr RCTRL I  &hmr RSHIFT O  &kp SV_O_UMLAUT
+&none            &kp Z          &kp X         &kp C        &kp D           &kp V             &kp K        &kp H          &kp SV_COMMA  &kp SV_DOT    &kp SV_MINUS   &sqt_quot
+                                              &lt SYM ESC  &lt NUM LSHIFT  &lt NAV TMUX      &lt NAV RET  &lt NUM SPACE  &lt SYM BSPC
             >;
         };
 
