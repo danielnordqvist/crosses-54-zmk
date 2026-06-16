@@ -13,7 +13,7 @@ layers:
   - PREV
   - PP
   - NEXT
-  - {type: none}
+  - $$mdi:keyboard-tab$$
   - Q
   - W
   - F
@@ -24,8 +24,8 @@ layers:
   - U
   - Y
   - Å
-  - {t: '''', s: '"'}
   - Ä
+  - {type: none}
   - {t: A, h: '$$mdi:apple-keyboard-shift$$'}
   - {t: R, h: '$$mdi:apple-keyboard-control$$'}
   - {t: S, h: '$$mdi:apple-keyboard-option$$'}
@@ -48,13 +48,13 @@ layers:
   - {t: ',', s: ;}
   - {t: ., s: ':'}
   - '-'
-  - $$mdi:keyboard-return$$
+  - {t: '''', s: '"'}
   - {t: '$$mdi:keyboard-esc$$', h: SYM}
-  - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
+  - {t: '$$mdi:apple-keyboard-shift$$', h: NUM}
   - {t: Ctl+B, h: NAV}
-  - {t: '$$mdi:keyboard-tab$$', h: NAV}
+  - {t: '$$mdi:keyboard-return$$', h: NAV}
   - {t: '$$mdi:keyboard-space$$', h: NUM}
-  - $$mdi:backspace$$
+  - {t: '$$mdi:backspace$$', h: SYM}
   SYM:
   - {type: none}
   - {type: none}
@@ -109,7 +109,7 @@ layers:
   - {type: none}
   - {type: none}
   - {type: none}
-  - {type: none}
+  - {type: held alternate}
   NUM:
   - {type: none}
   - {type: none}
@@ -160,10 +160,10 @@ layers:
   - {type: none}
   - {type: none}
   - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
   - {type: held}
+  - {type: none}
+  - {type: none}
+  - {type: held alternate}
   - {type: none}
   NAV:
   - {type: none}
@@ -329,4 +329,4 @@ layers:
   - {type: held}
   - {type: held}
   - {type: none}
-  - {type: none}
+  - {type: held}
