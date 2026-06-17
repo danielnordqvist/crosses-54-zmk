@@ -48,7 +48,7 @@ layers:
   - {t: ',', s: ;}
   - {t: ., s: ':'}
   - '-'
-  - {t: '''', s: '"'}
+  - BT CLR ALL
   - {t: '$$mdi:keyboard-esc$$', h: SYM}
   - {t: '$$mdi:apple-keyboard-shift$$', h: NUM}
   - {t: Ctl+B, h: NAV}
