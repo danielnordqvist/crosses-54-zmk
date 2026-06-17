@@ -49,7 +49,7 @@
         compatible = "zmk,input-processor-temp-layer";
         #input-processor-cells = <2>;
         require-prior-idle-ms = <1000>;
-        excluded-positions = <18 19 20 26 27 28>;
+        excluded-positions = <25 26 27 28 29 30 31 32 33 34>;
     };
 };
 
