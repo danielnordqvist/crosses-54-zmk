@@ -246,16 +246,16 @@ layers:
   - {type: none}
   - {type: none}
   - {type: none}
-  - '&mkp MB4'
+  - {type: none}
   - {t: '$$mdi:mouse-right-click$$', h: right}
   - {t: '$$mdi:mouse$$', h: middle}
   - {t: '$$mdi:mouse-left-click$$', h: left}
-  - '&mkp MB5'
-  - '&mkp MB5'
+  - {type: none}
+  - {type: none}
   - {t: '$$mdi:mouse-left-click$$', h: left}
   - {t: '$$mdi:mouse$$', h: middle}
   - {t: '$$mdi:mouse-right-click$$', h: right}
-  - '&mkp MB4'
+  - {type: none}
   - {type: none}
   - {type: none}
   - {type: none}
