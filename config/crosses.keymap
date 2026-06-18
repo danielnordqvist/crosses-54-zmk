@@ -43,7 +43,7 @@
     ╰───────────╮ 48  49  50 │ 51  52  53 ╭───────────╯ ╰───────────╮ LH2 LH1 LH0 │ RH0 RH1 RH2 ╭───────────╯
                 ╰────────────┴────────────╯                           ╰───────────┴─────────────╯
 */
-
+/*
 / {
     /omit-if-no-ref/ zip_temp_layer2: zip_temp_layer2 {
         compatible = "zmk,input-processor-temp-layer";
@@ -52,7 +52,7 @@
         excluded-positions = <25 26 27 28 29 30 31 32 33 34>;
     };
 };
-
+*/
 / {
     chosen { zmk,physical-layout = &gggw_crosses_54_layout; };
 
@@ -238,7 +238,7 @@
             bindings = <
 &trans  &trans    &trans     &trans      &trans     &trans         &trans     &trans     &trans     &trans     &trans    &trans
 &trans  &trans    &trans     &trans      &trans     &trans         &trans     &trans     &trans     &trans     &trans    &trans
-&trans  &mkp MB4  &mkp RCLK  &mkp MCLK   &mkp LCLK  &mkp MB5       &mkp MB5   &mkp LCLK  &mkp MCLK  &mkp RCLK  &mkp MB4  &trans
+&trans  &trans    &mkp RCLK  &mkp MCLK   &mkp LCLK  &trans         &trans     &mkp LCLK  &mkp MCLK  &mkp RCLK  &trans    &trans
 &trans  &trans    &trans     &trans      &trans     &trans         &trans     &trans     &trans     &trans     &trans    &trans
                              &trans      &trans     &trans         &trans     &trans     &trans
             >;
@@ -251,7 +251,7 @@
 &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &out OUT_TOG    &out OUT_TOG  &kp F7        &kp F8        &kp F9        &kp F10       &trans
 &trans        &kp LSHIFT    &kp LCTRL     &kp LALT      &kp LCMD      &trans          &trans        &kp F4        &kp F5        &kp F6        &kp F11       &trans
 &trans        &trans        &trans        &trans        &trans        &trans          &trans        &kp F1        &kp F2        &kp F3        &kp F12       &trans
-                                          &trans        &trans        &trans          &trans        &trans        &trans
+                                          &none        &none        &none          &none        &none        &none
             >;
         };
     };
