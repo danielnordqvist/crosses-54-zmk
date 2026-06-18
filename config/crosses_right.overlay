@@ -1,4 +1,4 @@
-/*
+
 &spi1 {
   trackball_central: trackball_central@0 {
     cpi = <700>;
@@ -12,4 +12,3 @@
   input-processors 
     = <&zip_ble_report_rate_limit>;
 };
-*/
