@@ -1,4 +1,5 @@
 // Overrides for the input-split child node
+/*
 &trackball_peripheral_split {
   device = <&trackball_peripheral>;
   input-processors
@@ -6,3 +7,4 @@
     , <&zip_scroll_scaler 1 4>
     , <&zip_ble_report_rate_limit>;
 };
+*/
